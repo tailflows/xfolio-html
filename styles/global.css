@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'BaiJamjuree';
+  src: url('./fonts/bai-jamjuree/BaiJamjuree-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BaiJamjuree';
+  src: url('./fonts/bai-jamjuree/BaiJamjuree-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaiJamjuree';
+  src: url('./fonts/bai-jamjuree/BaiJamjuree-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaiJamjuree';
+  src: url('./fonts/bai-jamjuree/BaiJamjuree-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaiJamjuree';
+  src: url('./fonts/bai-jamjuree/BaiJamjuree-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaiJamjuree';
+  src: url('./fonts/bai-jamjuree/BaiJamjuree-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.infinite-scroll {
+  display: flex;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.infinite-scroll ul {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
